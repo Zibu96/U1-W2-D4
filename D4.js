@@ -85,9 +85,20 @@ const check3and7 = function (np) {
         if (three === 0 && seven !== 0){
             return  "è un multiplo di 3 ma non di 7"
         }
-    else if
+    else if (three !== 0 && seven === 0){
+            return "è un multiplo di 7 ma non di 3"
+    }
+    else if (three === 0 && seven === 0){
+            return "è un multiplo di entrambi"
+         }
+         else (three !== 0 && seven !== 0) 
+            return "non è un multiplo di entrambi"
+         
 }
 console.log(check3and7(6))
+console.log(check3and7(14))
+console.log(check3and7(21))
+console.log(check3and7(4))
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
